@@ -1,0 +1,6 @@
+[submodule "styles"]
+	path = styles
+	url = git@github.com:shadowkai0121/epub_css.git
+[submodule "filters"]
+	path = filters
+	url = git@github.com:shadowkai0121/epub_filter.git
