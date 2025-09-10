@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive
+
 IFS=$'\n'
 find . -type f -name "book.yml" -print0 | while IFS= read -r -d '' file; do
     dir=$(dirname "$file")
