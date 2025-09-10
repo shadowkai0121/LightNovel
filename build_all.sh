@@ -2,6 +2,8 @@
 
 git submodule update --init --recursive
 
+curl -s https://raw.githubusercontent.com/shadowkai0121/zh_tw_correct/refs/heads/master/correct.py | python3 - 'https://raw.githubusercontent.com/shadowkai0121/zh_tw_correct/refs/heads/master/DICTIONARY'
+
 IFS=$'\n'
 find . -type f -name "book.yml" -print0 | while IFS= read -r -d '' file; do
     dir=$(dirname "$file")
